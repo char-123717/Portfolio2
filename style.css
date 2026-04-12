@@ -438,7 +438,7 @@ body.dark-mode .contact {
 
 .skill-frontend .skill-items {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+    grid-template-columns: repeat(1, 1fr); /* 1 kolom */
     gap: 12px;
 }
 
@@ -497,7 +497,7 @@ body.dark-mode .contact {
 
 .skill-tools .skill-items {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+    grid-template-columns: repeat(1, 1fr); /* 1 kolom */
     gap: 12px;
 }
 
@@ -556,7 +556,7 @@ body.dark-mode .contact {
 
 .skill-soft .skill-items {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+    grid-template-columns: repeat(1, 1fr); /* 1 kolom */
     gap: 12px;
 }
 

@@ -564,6 +564,8 @@ body.dark-mode .contact {
     background: linear-gradient(135deg, #fed7aa 0%, #fdba74 100%);
     color: #c2410c;
     border-color: #fb923c;
+    justify-content: center; /* horizontal */
+    align-items: center;  /* vertical */
 }
 
 .skill-soft .skill-badge:hover {

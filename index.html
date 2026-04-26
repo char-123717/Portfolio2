@@ -38,6 +38,7 @@
             <ul class="nav-menu">
                 <li><a href="#about" class="nav-link">關於我</a></li>
                 <li><a href="#skills" class="nav-link">技能</a></li>
+                <li><a href="#projects" class="nav-link">專案</a></li>
                 <li><a href="#work-experience" class="nav-link">經驗</a></li>
                 <li><a href="#education" class="nav-link">教育</a></li>
                 <li><a href="#contact" class="nav-link btn-primary">聯絡我</a></li>
@@ -52,11 +53,10 @@
     <section id="about" class="hero">
         <div class="container hero-content">
             <h1 class="animate-fade-up">您好, 我是 <span class="highlight">李家興 Charles</span></h1>
-            <h2 class="animate-fade-up delay-1">應徵半導體設備工程師職位（無經驗）</h2>
+            <h2 class="animate-fade-up delay-1">應徵BMC工程師職位</h2>
             <p class="animate-fade-up delay-2">
-                畢業於資訊工程學系，具備良好的邏輯思維與問題分析能力，並透過自學培養解決問題的能力。
-                雖然目前沒有半導體相關經驗，但我對設備運作、自動化系統及故障排除有高度興趣，並已主動學習基礎電學與設備相關知識。
-                我具備耐心、責任感及抗壓性，能適應輪班制度，並願意從基礎做起，快速學習成為一名穩定可靠的設備工程師。
+                畢業於資訊工程學系，具備良好的程式設計基礎，熟悉 <strong>C++</strong>，Python，Javascript，HTML5，並具備 <strong>Linux操作基礎</strong>。雖尚無BMC工程師相關實務經驗，但對其在伺服器遠端管理、系統監控與硬體控制上的應用有基本理解，並對韌體與底層系統開發具高度興趣。
+                我具備良好的邏輯思維與問題解決能力，能快速學習並應用新技術；同時對前端與後端開發亦有一定了解，具備跨領域整合能力。
             </p>
             <div class="hero-buttons animate-fade-up delay-3">
                 <a href="#contact" class="btn btn-primary">聯絡我</a>
@@ -73,36 +73,161 @@
 
             <div class="skills-grid">
                 <div class="skill-category skill-soft">
-                    <h3><i class="fas fa-users"></i> 工程相關</h3>
+                    <h3><i class="fas fa-code"></i> 程式語言</h3>
                     <div class="skill-items">
-                        <div class="skill-badge"><i class="fas fa-bolt"></i>基本電學概念(電壓/電流/電阻)</div>
-                        <div class="skill-badge"><i class="fas fa-tools"></i>故障排除思維(Troubleshooting & Root Cause Analysis)</div>
-                        <div class="skill-badge"><i class="fas fa-microchip"></i>基礎自動化概念(PLC 基本認識)</div>
-                        <div class="skill-badge"><i class="fas fa-cogs"></i>氣壓與機械基礎概念</div>
+                        <div class="skill-badge"><i class="devicon-cplusplus-plain"></i>C++</div>
+                        <div class="skill-badge"><i class="devicon-python-plain"></i>Python</div>
+                        <div class="skill-badge"><i class="devicon-javascript-plain"></i>JavaScript</div>
+                        <div class="skill-badge"><i class="devicon-html5-plain"></i>HTML5</div>
+                        <div class="skill-badge"><i class="devicon-react-original"></i>React.js</div>
                     </div>
                 </div>
 
-                <!-- Frontend -->
                 <div class="skill-category skill-frontend">
-                    <h3><i class="fas fa-code"></i>前端</h3>
+                    <h3><i class="fas fa-tools"></i>系統與工具</h3>
                     <div class="skill-items">
-                       <div class="skill-badge"><i class="devicon-html5-plain"></i><i class="devicon-css3-plain"></i>HTML / CSS</div>
-                        <div class="skill-badge"><i class="devicon-javascript-plain"></i>JavaScript</div>
-                        <div class="skill-badge"><i class="devicon-react-original"></i><i class="devicon-nextjs-plain"></i>React.js / Next.js</div>
-                        <div class="skill-badge"><i class="devicon-typescript-plain"></i>TypeScript</div>
-                        <div class="skill-badge"><i class="fas fa-bug"></i>基本程式邏輯與除錯能力(Debug)</div>
+                        <div class="skill-badge"><i class="devicon-linux-plain"></i>Linux/Shell操作</div>
+                        <div class="skill-badge"><i class="devicon-git-plain"></i>Git版本控制</div>
+                        <div class="skill-badge"><i class="devicon-github-plain"></i>Github</div>
+                        <div class="skill-badge"><i class="devicon-vercel-plain"></i>Vercel</div>
                     </div>
                 </div>
 
                 <!-- Tools -->
                 <div class="skill-category skill-tools">
-                    <h3><i class="fas fa-tools"></i>工具</h3>
+                    <h3><i class="fas fa-terminal"></i>基礎概念</h3>
                     <div class="skill-items">
-                        <div class="skill-badge"><i class="devicon-git-plain"></i> <i class="devicon-github-plain"></i>Git & GitHub</div>
-                        <div class="skill-badge"><i class="fas fa-file-excel"></i>Excel(Data Analysis)</div>
-                        <div class="skill-badge"><i class="devicon-vercel-plain"></i>Vercel</div>
+                        <div class="skill-badge"><i class="devicon-linux-plain"></i>基本作業系統概念</div>
+                        <div class="skill-badge"><i class="fas fa-network-wired"></i>TCP/IP 網路基礎</div>
+                        <div class="skill-badge"><i class="fas fa-bug"></i>問題排除能力</div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">專案</h2>
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="Server Health Monitor.png">
+                    </div>
+                    <div class="project-info">
+                        <h3>Server Health Monitor</h3>
+                        <p>A lightweight BMC-like system built with Python, Flask, and WebSocket to simulate real-time server health monitoring, including CPU, memory, and disk usage visualization.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>WebSocket</span>
+                            <span>psutil</span>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/char-123717/BMCdash" target="_blank" class="link-btn"><i
+                                    class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="BMC.png">
+                    </div>
+                    <div class="project-info">
+                        <h3>BMC Simulator</h3>
+                        <p>A compact, portable BMC-like simulator implemented for Linux (WSL) using C++ and small helper scripts. The project exposes a simple TCP socket command interface (port 8888 by default) to query basic system sensors: CPU, memory, temperature, disk, and uptime. Responses are plain JSON strings so they are easy to parse.</p>
+                        <div class="project-tech">
+                            <span>C++</span>
+                            <span>Shell</span>
+                            <span>Linux</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/char-123717/BMC-System" target="_blank" class="link-btn"><i
+                                    class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="ShopNext.png">
+                    </div>
+                    <div class="project-info">
+                        <h3>ShopNext</h3>
+                        <p>Modern client-side e-commerce web app built with Next.js, React.js, and Typescript, enabling users to browse products, view details, search, and manage cart and wishlist.</p>
+                        <div class="project-tech">
+                            <span>React.js</span>
+                            <span>Next.js</span>
+                            <span>TypeScript</span>
+                            <span>Sass</span>
+                            <span>Redux Toolkit</span>
+                            <span>Tanstack Query</span>
+                            <span>Axios</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://shop-next-blue-seven.vercel.app/" target="_blank"
+                                class="link-btn"><i class="fas fa-external-link-alt"></i>
+                                Demo</a>
+                            <a href="https://github.com/char-123717/ShopNext" target="_blank" class="link-btn"><i
+                                    class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="AuctiChain.png">
+                    </div>
+                    <div class="project-info">
+                        <h3>AuctiChain DApp</h3>
+                        <p>A user-friendly decentralized auction platform with an interactive Javascript, HTML/CSS frontend that lets users browse items, place bids, and participate in secure blockchain-backed auctions.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>HTML/CSS</span>
+                            <span>Solidity</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://youtu.be/uVjeZD4ja3g" target="_blank" class="link-btn"><i
+                                    class="fas fa-external-link-alt"></i>
+                                Demo</a>
+                            <a href="https://github.com/char-123717/AuctiChain" target="_blank" class="link-btn"><i
+                                    class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="Evoting.png">
+                    </div>
+                    <div class="project-info">
+                        <h3>Evoting DApp</h3>
+                        <p>A decentralized voting DApp with React.js, Javascript and Tailwind CSS frontend and Solidity smart contracts, enabling secure, transparent voting via Web3 wallets and admin-managed elections.</p>
+                        <div class="project-tech">
+                            <span>React.js</span>
+                            <span>JavaScript</span>
+                            <span>Tailwind CSS</span>
+                            <span>Solidity</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://youtu.be/y1CNol0dNXw" target="_blank" class="link-btn"><i
+                                    class="fas fa-external-link-alt"></i>
+                                Demo</a>
+                            <a href="https://github.com/char-123717/Evoting-SmartContract" target="_blank"
+                                class="link-btn"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
@@ -113,13 +238,12 @@
             <h2 class="section-title">經驗</h2>
             <div class="work-content">
                 <div class="work-text">
-                    <h2>先豐通訊有限公司</h2>
+                    <h2>先豐通訊股份有限公司</h2>
                     <h2>BOARDTEK ELECTRONICS CORPORATION </h2>
                     <h3>桃園, 台灣 </h3><br>
-                    <strong>鍍金操作員（兼職）<br> (June 2024 - September 2024)</strong>
+                    <strong>電鍍製程表面處理（兼職）<br> (June 2024 - September 2024)</strong>
                     <p>
-                        負責電子元件的鍍金作業，在高產量環境下依照標準流程進行操作，確保產品品質穩定，並遵守相關安全規範與生產標準。
-                    </p>
+                        在電鍍製程部門負責PCB選擇性鍍金作業，包含乾膜貼合、雷射開窗、電鍍金及退膜流程操作。在高產量環境下依照標準流程進行操作，確保產品品質穩定，並遵守相關安全規範與生產標準。
                 </div>
             </div>
         </div>
